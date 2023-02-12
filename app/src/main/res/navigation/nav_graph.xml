@@ -7,5 +7,15 @@
     <fragment
         android:id="@+id/splashFragment"
         android:name="com.ahmetturk.socially.screens.splash.SplashFragment"
-        android:label="SplashFragment" />
+        android:label="SplashFragment">
+        <action
+            android:id="@+id/action_splashFragment_to_homepageFragment"
+            app:destination="@id/homepageFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homepageFragment"
+        android:name="com.ahmetturk.socially.screens.homepage.HomepageFragment"
+        android:label="HomepageFragment" />
 </navigation>

@@ -10,7 +10,7 @@ import androidx.viewbinding.ViewBinding
 abstract class BaseFragment<T : ViewBinding> : Fragment() {
 
     private var _binding: T? = null
-    protected val binding: T
+    val binding: T
         get() = _binding
             ?: throw IllegalStateException("Cannot access view after onDestroyView and before onViewCreated")
 

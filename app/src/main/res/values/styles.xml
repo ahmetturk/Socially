@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Title_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">39sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="H1_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">31.25sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="H2Bold_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="H2Regular_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="H3_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="BodyRegular_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="BodySmall_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Captions_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">12.8sp</item>
+        <item name="android:textColor">@color/captions_gray</item>
+    </style>
+
+    <style name="ButtonRegular" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ButtonLarge" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>
