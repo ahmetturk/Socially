@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parentView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/feedImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp"
+                tools:src="@drawable/view1" />
+
+            <ImageView
+                android:id="@+id/personImageView"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/feedperson1" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                style="@style/Captions_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/personImageView"
+                app:layout_constraintTop_toTopOf="@+id/personImageView"
+                tools:text="Dennis Reynolds" />
+
+            <TextView
+                android:id="@+id/timeTextView"
+                style="@style/Captions_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/time_gray"
+                app:layout_constraintStart_toEndOf="@id/personImageView"
+                app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+                tools:text="2 hrs ago" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_options"
+                app:layout_constraintBottom_toBottomOf="@+id/personImageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/personImageView" />
+
+            <eightbitlab.com.blurview.BlurView
+                android:id="@+id/likedBlurView"
+                android:layout_width="76dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_rounded"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/commentsBlurView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/likedTextView"
+                    style="@style/Captions_TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    app:drawableStartCompat="@drawable/ic_liked"
+                    tools:text="5.2K" />
+
+            </eightbitlab.com.blurview.BlurView>
+
+            <eightbitlab.com.blurview.BlurView
+                android:id="@+id/commentsBlurView"
+                android:layout_width="76dp"
+                android:layout_height="32dp"
+                android:background="@drawable/bg_rounded"
+                app:layout_constraintBottom_toBottomOf="@id/likedBlurView"
+                app:layout_constraintEnd_toStartOf="@+id/savedBlurView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/likedBlurView">
+
+                <TextView
+                    android:id="@+id/commentsTextView"
+                    style="@style/Captions_TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    app:drawableStartCompat="@drawable/ic_comments"
+                    tools:text="1.1K" />
+
+            </eightbitlab.com.blurview.BlurView>
+
+            <eightbitlab.com.blurview.BlurView
+                android:id="@+id/savedBlurView"
+                android:layout_width="76dp"
+                android:layout_height="32dp"
+                android:background="@drawable/bg_rounded"
+                app:layout_constraintBottom_toBottomOf="@id/likedBlurView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/commentsBlurView">
+
+                <TextView
+                    android:id="@+id/savedTextView"
+                    style="@style/Captions_TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    app:drawableStartCompat="@drawable/ic_saved"
+                    tools:text="362" />
+
+            </eightbitlab.com.blurview.BlurView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

@@ -11,4 +11,6 @@
     <color name="accent">#F5C8C6</color>
     <color name="accent_light">#EEF2E2</color>
     <color name="captions_gray">#656565</color>
+    <color name="time_gray">#D8D8D8</color>
+    <color name="button_gray_40">#66E5E5E5</color>
 </resources>

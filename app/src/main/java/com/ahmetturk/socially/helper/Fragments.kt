@@ -8,7 +8,7 @@ import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import com.ahmetturk.socially.base.BaseFragment
 
-fun BaseFragment<*>.drawOverStatusBar() {
+fun BaseFragment<*>.drawOverStatusBar(applyPadding: Boolean = true) {
     lifecycle.addObserver(object : DefaultLifecycleObserver {
 
         override fun onStart(owner: LifecycleOwner) {
@@ -23,7 +23,9 @@ fun BaseFragment<*>.drawOverStatusBar() {
                     rightMargin = insets.right
                 }
 
-                view.setPadding(0, insets.top, 0, 0)
+                if (applyPadding) {
+                    view.setPadding(0, insets.top, 0, 0)
+                }
 
                 WindowInsetsCompat.CONSUMED
             }
