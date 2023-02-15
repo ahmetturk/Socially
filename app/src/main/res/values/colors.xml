@@ -13,4 +13,5 @@
     <color name="captions_gray">#656565</color>
     <color name="time_gray">#D8D8D8</color>
     <color name="button_gray_40">#66E5E5E5</color>
+    <color name="selected_menu">#7DB9B3</color>
 </resources>

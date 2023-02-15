@@ -67,4 +67,9 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
+    <style name="SociallyFabShapeOverlay">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">23dp</item>
+    </style>
+
 </resources>
